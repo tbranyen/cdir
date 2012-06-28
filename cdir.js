@@ -683,8 +683,6 @@ module.exports = function dir (obj, options) {
 
   process.nextTick(function() {
 
-    up();
-    write('\033[K\r');
     write('\033[K\r\n');
 
     var dobj = JSON.decycle(obj);
